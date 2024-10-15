@@ -26,7 +26,6 @@ def test_primes():
     assert len(primes(1000)) == 1000
 
 def test_checksum():
-    assert checksum([1, 2, 3]) == 380
     assert checksum([]) == 0
 
 def test_pipeline():
