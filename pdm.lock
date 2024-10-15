@@ -8,7 +8,7 @@ lock_version = "4.5.0"
 content_hash = "sha256:a913c9c86354be001f75269678a6fbfc06acfe18790329fb642e9c20dd5861df"
 
 [[metadata.targets]]
-requires_python = "==3.12.*"
+requires_python = "==3.9.20"
 
 [[package]]
 name = "cfgv"
