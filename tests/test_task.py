@@ -24,6 +24,7 @@ def test_primes():
     assert len(primes(5)) == 5
     assert primes(10) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
     assert len(primes(10)) == 10
+    assert len(primes(1000)) == 1000
 
 def test_checksum():
     assert checksum([1, 2, 3]) == 380

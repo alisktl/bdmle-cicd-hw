@@ -39,9 +39,9 @@ def get_primes_fast(m: int, n: int) -> List[int]:
     return res
 
 def primes(count: int) -> List[int]:
-    primes = get_primes_fast(2, 100000)
+    prime_numbers = get_primes_fast(2, 100000)
 
-    return items[:count]
+    return prime_numbers[:count]
 
 def checksum(x: List[int]) -> int:
     current_checksum = 0
