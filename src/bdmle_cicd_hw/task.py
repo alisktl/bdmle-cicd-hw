@@ -39,7 +39,7 @@ def get_primes_fast(m: int, n: int) -> List[int]:
     return res
 
 def primes(count: int) -> List[int]:
-    prime_numbers = get_primes_fast(2, 100000)
+    prime_numbers = get_primes_fast(2, 1000000)
 
     return prime_numbers[:count]
 
@@ -60,3 +60,23 @@ def pipeline() -> int:
     random.shuffle(prime_numbers)
 
     return checksum(prime_numbers)
+
+def pipeline(count: int, seed: int) -> int:
+    prime_numbers = primes(count)
+
+    random.seed(seed)
+    random.shuffle(prime_numbers)
+
+    return prime_numbers
+
+if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description='Generate a list of prime numbers.')
+    parser.add_argument('count', type=int, help='Number of prime numbers')
+    parser.add_argument('seed', type=int, help='Seed')
+
+    args = parser.parse_args()
+    
+    generated_primes = pipeline(args.count, args.seed)
+
+    for prime in generated_primes:
+        print(prime)
