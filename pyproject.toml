@@ -1,0 +1,26 @@
+[project]
+name = "bdmle-cicd-hw"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Alisher Karibzhanov", email = "alisktl@gmail.com"},
+]
+dependencies = [
+    "pip>=24.2",
+    "pre-commit>=4.0.1",
+    "ruff>=0.6.9",
+]
+requires-python = "==3.9.20"
+readme = "README.md"
+license = {text = "MIT"}
+
+[build-system]
+requires = ["pdm-backend"]
+build-backend = "pdm.backend"
+
+[tool.pdm]
+distribution = true
+
+[tool.ruff]
+show-fixes = true
+line-length = 120
