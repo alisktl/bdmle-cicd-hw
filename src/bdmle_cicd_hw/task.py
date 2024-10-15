@@ -62,7 +62,7 @@ def pipeline() -> int:
 
     return checksum(prime_numbers)
 
-def pipeline(count: int, seed: int) -> int:
+def pipeline_terminal(count: int, seed: int) -> int:
     prime_numbers = primes(count)
 
     random.seed(seed)
@@ -77,7 +77,7 @@ if __name__ == "__main__":
 
     args = parser.parse_args()
     
-    generated_primes = pipeline(args.count, args.seed)
+    generated_primes = pipeline_terminal(args.count, args.seed)
 
     for prime in generated_primes:
         print(prime)
