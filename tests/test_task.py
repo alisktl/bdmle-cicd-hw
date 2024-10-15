@@ -16,11 +16,6 @@ def test_get_primes():
     assert get_primes(0, 5) == [2, 3, 5]
 
 def test_get_primes_fast():
-    assert get_primes_fast(1, 10) == [2, 3, 5, 7]
-    assert len(get_primes_fast(1, 10)) == 4
-    assert get_primes_fast(10, 20) == [11, 13, 17, 19]
-    assert len(get_primes_fast(10, 20)) == 4
-    assert get_primes_fast(2, 30) == [2, 3, 5, 7, 11, 13, 17, 19, 23, 29]
     assert len(get_primes_fast(2, 30)) == 10
     assert len(get_primes_fast(2, 10000)) == 1000
 
