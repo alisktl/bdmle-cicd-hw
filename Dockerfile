@@ -8,6 +8,7 @@ RUN pdm lock --check \
     && pdm -v export --without-hashes -f requirements -o requirements.txt \
     && python3 -m pip install --no-cache-dir -r requirements.txt
 
+COPY dist/ /tmp/dist/
 RUN python3 -m pip install --no-cache-dir /tmp/dist/*.whl
 
 COPY src/bdmle_cicd_hw/task.py /app/
