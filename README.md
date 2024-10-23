@@ -3,4 +3,4 @@ CI/CD homework
 
 ## Статус тестов
 
-![Тесты](https://github.com/alisktl/bdmle-cicd-hw/actions/workflows/tests.yml/badge.svg)
+[![Run tests](https://github.com/alisktl/bdmle-cicd-hw/actions/workflows/tests.yaml/badge.svg?branch=section04)](https://github.com/alisktl/bdmle-cicd-hw/actions/workflows/tests.yaml)
