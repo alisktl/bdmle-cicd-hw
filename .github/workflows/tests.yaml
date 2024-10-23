@@ -1,5 +1,15 @@
 name: Run tests
-on: [push]
+
+on:
+  push:
+    branches:
+      - main
+      - section04
+  pull_request:
+    branches:
+      - main
+      - section04
+
 jobs:
   tests:
     runs-on: ubuntu-latest
